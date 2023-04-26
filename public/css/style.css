@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
 
 
 body {
@@ -16,8 +24,8 @@ img{
 }
 
 p{
-  text-align: center;
   color: #ffffff;
+  text-align: center;
 }
 
 h1 {
@@ -41,51 +49,66 @@ form {
 }
 
 fieldset{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   
   
 }
 
 #info{
+  line-height: 1.5;
   padding: 50px;
   text-align: justify;
-  line-height: 1.5;
 }
 
 input, select {
-  padding: .25em;
   /* width: 100%; */
   font-size: 14pt;
+  padding: .25em;
   
 	
 }
 
 h2 {
-  text-align: center;
   color: #ffffff;
+  text-align: center;
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  flex-wrap: wrap-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 li {
-  background-color: #51473c;
-  color: #ffffff;
-  width: fit-content;
-  border-radius: 2%;
-  -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
   -ms-border-radius: 2%;
   -o-border-radius: 2%;
-  padding: 10px;
-  margin: 10px;
+  -webkit-border-radius: 2%;
+  background-color: #51473c;
+  border-radius: 2%;
+  color: #ffffff;
   list-style: none;
+  margin: 10px;
   outline: 2px white solid;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 span{
@@ -93,26 +116,27 @@ span{
 }
 
 .fa-edit,.fa-trash{
-    padding: 2px;
     margin: 3px;
+    padding: 2px;
     
 } 
 
 .selectize-control::before {
   -moz-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  content: ' ';
-  z-index: 2;
-  position: absolute;
-  display: block;
-  top: 12px;
-  right: 34px;
-  width: 16px;
-  height: 16px;
-  background: url(images/spinner.gif);
   background-size: 16px 16px;
+  background: url(images/spinner.gif);
+  content: ' ';
+  display: block;
+  height: 16px;
   opacity: 0;
+  position: absolute;
+  right: 34px;
+  top: 12px;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  width: 16px;
+  z-index: 2;
 }
 .selectize-control.loading::before {
   opacity: 0.4;
