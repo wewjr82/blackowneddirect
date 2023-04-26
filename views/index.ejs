@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Directory</title>
-    <link rel="shortcut icon" href="images/default.png" type="image/png">
+    <link rel="shortcut icon" href="images/default.png" type="image/png" />
   </head>
   <body>
     <header>
@@ -89,7 +89,15 @@
         </div>
 
         <p id="info">
-         It's not popular to purchase Black. Customers of color want to support businesses that are run and owned by people of color. Furthermore, ethical shoppers who are actively working to alter the landscape want to spend money with you. Add your business to our business directory, which specializes in listing and promoting BLACK EXCELLENCE, you can make it simple for them to find you. If you're a business owner and are simply interested in what Virginia has to offer in terms of black ownership, feel free to discover the ideal places to dine, work, and relax.
+          It's not popular to purchase Black. Customers of color want to support
+          businesses that are run and owned by people of color. Furthermore,
+          ethical shoppers who are actively working to alter the landscape want
+          to spend money with you. Add your business to our business directory,
+          which specializes in listing and promoting BLACK EXCELLENCE, you can
+          make it simple for them to find you. If you're a business owner and
+          are simply interested in what Virginia has to offer in terms of black
+          ownership, feel free to discover the ideal places to dine, work, and
+          relax.
         </p>
       </fieldset>
     </form>
@@ -123,7 +131,6 @@
     <ul>
       <% for(var i = 0; i < businesses.length; i++) {%>
       <li>
-        
         <span><%= businesses[i].name %></span><br />
         <span><%= businesses[i].industry %></span><br />
         <span><%= businesses[i].webSite %></span><br />
@@ -132,8 +139,8 @@
         <span><%= businesses[i].city %></span><br />
         <span><%= businesses[i].state %></span><br />
         <span><%= businesses[i].zipCode %></span><br />
-        
-           <!-- <span class='fa fa-trash'></span>  -->
+
+        <!-- <span class='fa fa-trash'></span>  -->
       </li>
       <% } %>
     </ul>
