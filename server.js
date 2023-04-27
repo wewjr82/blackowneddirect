@@ -1,12 +1,8 @@
 const express = require("express");
 const app = express();
- const MongoClient = require("mongodb").MongoClient;
+const MongoClient = require("mongodb").MongoClient;
 const PORT = 7160;
 require("dotenv").config();
-
-
-     
-
 
 let db,
   dbConnectionStr = process.env.DB_STRING;
@@ -49,6 +45,19 @@ app.post("/addYourBusiness", (request, response) => {
     .then((result) => {
       console.log("Business Added");
       response.redirect("/");
+    })
+    .catch((error) => console.error(error));
+});
+
+app.delete("/deleteBusiness", (request, response) => {
+  db.collection("businesses")
+    .deleteOne({
+      name: request.body.bName
+      
+    })
+    .then((result) => {
+      console.log("Business Deleted");
+      response.json("Business Deleted");
     })
     .catch((error) => console.error(error));
 });
