@@ -6,7 +6,7 @@ Link to project: https://blackowneddirect-dkt1.onrender.com
 
 <h2>How It's Made:</h2>
 
-<p>Tech used: Express.js & MongoDB/p>
+<p>Tech used: Express.js & MongoDB</p>
 
 <p>By using Express.js and MongoDB, I was able to develop Black Owned Direct quickly and easily, while also ensuring that the application is scalable and reliable. </p>
 
