@@ -139,8 +139,6 @@ footer {
 /* MOBILE  */
 @media only screen and (max-width: 414px) {
   img {
-    /* width: 100vw;
-    margin-left: 30px; */
     display: inline-block;
     margin: 0 auto;
   }
@@ -173,5 +171,18 @@ footer {
 @media only screen and (max-width: 640px) {
   fieldset {
     flex-direction: column;
+  }
+
+  #info {
+    line-height: 1.25;
+    padding: 25px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    text-align: center;
   }
 }
