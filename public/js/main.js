@@ -1,5 +1,5 @@
 const deleteBtn = document.querySelectorAll(".fa-trash");
-//find the span inside of something that has the class of item
+// // find the span inside of something that has the class of item
 
 Array.from(deleteBtn).forEach((element) => {
   element.addEventListener("click", deleteBusiness);
@@ -36,3 +36,8 @@ async function deleteBusiness() {
     console.log(err);
   }
 }
+
+
+
+
+

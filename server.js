@@ -52,8 +52,7 @@ app.post("/addYourBusiness", (request, response) => {
 app.delete("/deleteBusiness", (request, response) => {
   db.collection("businesses")
     .deleteOne({
-      name: request.body.bName
-      
+      name: request.body.bName,
     })
     .then((result) => {
       console.log("Business Deleted");
@@ -61,6 +60,25 @@ app.delete("/deleteBusiness", (request, response) => {
     })
     .catch((error) => console.error(error));
 });
+
+// app.delete("/deleteBusiness", async (request, response) => {
+//   const business = await db.collection("businesses").findOne({
+//     name: request.body.bName,
+//   });
+
+//   if (business.createdBy === request.user.id) {
+//     await db.collection("businesses").deleteOne({
+//       name: request.body.bName,
+//     });
+
+//     response.json("Business Deleted");
+//   } else {
+//     response
+//       .status(403)
+//       .json("You are not authorized to delete this business.");
+//   }
+// });
+
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on port ${PORT}`);

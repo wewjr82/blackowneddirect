@@ -107,6 +107,9 @@ span {
   padding: 2px;
 }
 
+
+
+
 .selectize-control::before {
   -moz-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
