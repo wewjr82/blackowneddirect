@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Add your business to our directory of Black-owned businesses in Virginia. Support Black excellence by discovering and promoting local businesses."
+    />
+    <title>Directory</title>
+    <link rel="icon" href="images/default.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <title>Directory</title>
-    <link rel="shortcut icon" href="images/default.png" type="image/png" />
   </head>
   <body>
     <header>
@@ -106,26 +109,21 @@
 
     <h2>Directory</h2>
     <br />
-    <!-- <form action="/filter" method="post">
-      <label for="filter">Filter by City</label>
 
+    <!-- <form action="/filter" method="post">
+      <label for="filter">Filter by City:</label>
       <select id="city" name="city">
         <option value="">Select City</option>
-
         <option value="Chesapeake">Chesapeake</option>
-
         <option value="Hampton">Hampton</option>
-
         <option value="Norfolk">Norfolk</option>
         <option value="Newport News">Newport News</option>
-
         <option value="Portsmouth">Portsmouth</option>
-
         <option value="Suffolk">Suffolk</option>
-
         <option value="Virginia Beach">Virginia Beach</option>
       </select>
-      <input type="button" value="submit" />
+
+      <input type="submit" value="Submit" />
     </form> -->
 
     <ul>
@@ -140,10 +138,7 @@
         <span><%= businesses[i].state %></span><br />
         <span><%= businesses[i].zipCode %></span><br />
 
-        
-       <!-- <span class="fa fa-trash trash-can-icon"></span> -->
-      
-        
+        <!-- <span class="fa fa-trash trash-can-icon"></span> -->
       </li>
       <% } %>
     </ul>

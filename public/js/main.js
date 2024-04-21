@@ -38,6 +38,3 @@ async function deleteBusiness() {
 }
 
 
-
-
-
